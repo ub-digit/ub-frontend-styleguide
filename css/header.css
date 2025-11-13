@@ -60,7 +60,7 @@ header .header-left .header-logo {
   height: 5.375rem;
   width: 5.25rem;
   flex-shrink: 0;
-  background-image: url("/img/gu_logo_en_high-faf63c23d8370f48fef9567491132726.png");
+  background-image: url("../img/gu_logo_en_high-faf63c23d8370f48fef9567491132726.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
