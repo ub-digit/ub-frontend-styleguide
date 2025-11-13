@@ -1,0 +1,94 @@
+/* 
+@property definitions for responsive breakpoints
+Workaround for using CSS custom properties in "media queries"
+https://piccalil.li/blog/a-workaround-for-using-custom-properties-in-media-queries/
+
+
+##### how to use in your CSS #####
+
+    @container style(--inline-size-medium: var(--breakpoint-medium)) {
+        body {
+            background-color: blue;
+        }
+    }
+
+    @container style(--inline-size-large: var(--breakpoint-large)) {
+        body {
+            background-color: green;
+        }
+    }
+##### end how to use #####
+
+*/
+
+@property --inline-size-medium {
+  syntax: "<length-percentage>";
+  inherits: true;
+  initial-value: 100vi;
+}
+@property --inline-size-large {
+  syntax: "<length-percentage>";
+  inherits: true;
+  initial-value: 100vi;
+}
+
+:root {
+  --hue-primary: 240;
+  --hue-secondary: 240;
+  --hue-call-to-action: 13;
+  --hue-error: 26;
+  --hue-warning: 85;
+  --hue-success: 138;
+  --hue-light: 0;
+  --hue-dark: 0;
+
+  /* vars from gu-se website */
+  --hero-color: hsl(249 17% 20% / 1);
+  --hero-text: hsl(0 0% 100% / 1);
+  --action-color: hsl(338 100% 44% / 1);
+  --action-text: hsl(0 0% 100% / 1);
+  --blurb-default-color: hsl(210 100% 40% / 1);
+  --blurb-default-text: hsl(0 0% 100% / 1);
+  --blurb-1-color: hsl(100 74% 31% / 1);
+  --news-color: hsl(300, 7%, 3%);
+  --news-text: hsl(0 0% 100% / 1);
+
+  /* ##### color variables ##### */
+
+  --primary-color: oklch(56% 0.158 var(--hue-primary));
+  --primary-color-light: oklch(66% 0.158 var(--hue-primary));
+  --primary-color-lighter: oklch(76% 0.158 var(--hue-primary));
+  --secondary-color: oklch(30% 0.0725 var(--hue-secondary));
+  --secondary-color-light: oklch(35% 0.0725 var(--hue-secondary));
+  --secondary-color-lighter: oklch(40% 0.0725 var(--hue-secondary));
+  --call-to-action-color: oklch(58% 0.230868 var(--hue-call-to-action));
+  --call-to-action-color-light: oklch(65% 0.230868 var(--hue-call-to-action));
+  --call-to-action-color-lighter: oklch(72% 0.230868 var(--hue-call-to-action));
+  --success-color: oklch(56% 0.1642 var(--hue-success));
+  --success-color-light: oklch(66% 0.1642 var(--hue-success));
+  --success-color-lighter: oklch(76% 0.1642 var(--hue-success));
+  --error-color: oklch(56% 0.1642 var(--hue-error));
+  --error-color-light: oklch(66% 0.1642 var(--hue-error));
+  --error-color-lighter: oklch(76% 0.1642 var(--hue-error));
+  --warning-color: oklch(84% 0.1642 var(--hue-warning));
+  --warning-color-light: oklch(90% 0.1642 var(--hue-warning));
+  --warning-color-lighter: oklch(95% 0.1642 var(--hue-warning));
+
+  --dark-color: oklch(10% 0 var(--hue-dark));
+  --dark-color-light: oklch(30% 0 var(--hue-dark));
+  --dark-color-lighter: oklch(50% 0 var(--hue-dark));
+  --gray-color: oklch(77% 0 var(--hue-light));
+  --gray-color-light: oklch(87% 0 var(--hue-light));
+  --gray-color-lighter: oklch(97% 0 var(--hue-light));
+
+  /* ##### typography variables ##### */
+
+  --header-height: 9rem;
+  --footer-height: 10rem;
+
+  /* ##### breakpoints ##### */
+  --breakpoint-medium: 48rem;
+  --inline-size-medium: min(var(--breakpoint-medium), 100vi);
+  --breakpoint-large: 64rem;
+  --inline-size-large: min(var(--breakpoint-large), 100vi);
+}

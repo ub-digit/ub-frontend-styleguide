@@ -1,0 +1,113 @@
+.mobile-navigation-container {
+  padding: 0;
+}
+
+@container style(--inline-size-medium: var(--breakpoint-medium)) {
+  .mobile-navigation-container {
+    padding: 0 1rem;
+  }
+  .container,
+  .mobile-navigation-container {
+    width: var(--inline-size-medium);
+  }
+}
+
+@container style(--inline-size-large: var(--breakpoint-large)) {
+  .container,
+  .mobile-navigation-container {
+    width: var(--inline-size-large);
+  }
+}
+
+.fix-viewport-height {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+#mobile-navigation-toggle {
+  display: flex;
+  justify-content: flex-end;
+  height: 4rem;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid var(--gray-color-light);
+  border-left: none;
+  border-right: none;
+}
+
+@container style(--inline-size-medium: var(--breakpoint-medium)) {
+  #mobile-navigation-toggle {
+    border: 1px solid var(--gray-color-light);
+    border-radius: 4px;
+  }
+}
+
+#mobile-navigation-toggle .search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+#mobile-navigation-toggle .search-box input {
+  border: none;
+  height: 100%;
+  width: 100%;
+  margin-left: 2px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+#mobile-navigation-toggle .search-box input:focus-visible {
+  outline: none;
+}
+
+#mobile-navigation-toggle button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  background-color: var(--dark-color-light);
+  color: var(--gray-color-lighter);
+  font-size: 2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+#mobile-navigation-toggle button:hover {
+  color: var(--primary-color-lighter);
+}
+
+@container style(--inline-size-medium: var(--breakpoint-medium)) {
+  #mobile-navigation-toggle button {
+    border-radius: 0 4px 4px 0;
+  }
+}
+
+/* ### main navigation styles ### */
+#main-navigation ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--gray-color-light);
+  border-top: none;
+}
+
+@container style(--inline-size-medium: var(--breakpoint-medium)) {
+  #main-navigation ul {
+    flex-direction: row;
+    border: 0;
+    padding-left: 0;
+  }
+}
+
+#main-navigation ul li a {
+  text-decoration: none;
+  color: var(--gray-color-dark);
+}
+#main-navigation ul li a:hover {
+  text-decoration: underline;
+}

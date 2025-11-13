@@ -1,0 +1,84 @@
+header {
+  color: var(--light-color);
+  height: var(--header-height);
+  /*  border-bottom: 1px solid var(--gray-color-light);*/
+}
+
+header .container {
+  height: 100%;
+}
+
+header .header-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Helvetica Neue Condensed", "Arial Narrow", sans-serif;
+}
+
+header .header-left .header-site-description .header-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+header .header-left .header-site-description .header-title a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+header .header-left .header-site-description .header-title a:hover {
+  color: var(--dark-color-lighter);
+  text-decoration: underline;
+}
+
+header .header-left .header-site-description .header-description {
+  font-size: 0.875rem;
+}
+
+@container style(--inline-size-medium: var(--breakpoint-medium)) {
+  header .header-left .header-site-description .header-title {
+    font-size: 1.5rem;
+  }
+  header .header-left .header-site-description .header-description {
+    font-size: 1rem;
+  }
+}
+
+header .header-left .header-site-description .header-description {
+  margin: 0;
+  color: var(--dark-color-light);
+}
+
+header .header-left .header-logo {
+  align-self: flex-start;
+  height: 5.375rem;
+  width: 5.25rem;
+  flex-shrink: 0;
+  background-image: url("/img/gu_logo_en_high-faf63c23d8370f48fef9567491132726.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@container style(--inline-size-medium: var(--breakpoint-medium)) {
+  header .header-left .header-logo {
+    height: 6.875rem;
+    width: 6.75rem;
+  }
+}
+
+header .header-right {
+  padding-top: 1rem;
+}
+header .header-right .lang a {
+  color: var(--dark-color);
+  text-decoration: none;
+  padding: 2px 6px;
+  border-radius: 2px;
+}

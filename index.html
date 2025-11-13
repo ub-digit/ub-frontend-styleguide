@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Document CSS</title>
+</head>
+
+<body id="top">
+    <div id="back-to-top-link"> <!-- skip to top link -->
+        <a href="#top">Up ↑</a>
+    </div>
+
+    <header> <!-- header spans full width -->
+        <div class="container">
+            <div class="header-content-wrapper">
+                <div class="header-left">
+                    <a href="#">
+                        <div class="header-logo" alt="logotype"></div>
+                    </a>
+                    <div class="header-site-description">
+                        <div class="header-title"><a href="#">Gothenburg University Library</a></div>
+                        <p class="header-description">A simple template using only CSS for layout and styling.</p>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="lang">
+                        <a href="#">SV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-navigation-container">
+        <div id="mobile-navigation-toggle">
+            <div class="search-box">
+                <input name="search" type="search" placeholder="Search..." autofocus>
+            </div>
+            <button type="button">☰</button>
+        </div>
+
+        <nav id="main-navigation" class="main-navigation">
+            <ul>
+                <li><a href="#breakpoint-section">Breakpoints</a></li>
+                <li><a href="#color-palette-section">Color Palette</a></li>
+                <li><a href="#typography-section">Typography</a></li>
+                <li><a href="#logotype-section">Logotypes</a></li>
+                <li><a href="#buttons-section">Buttons</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="container fix-viewport-height">
+
+        <section id="breakpoint-section" class="breakpoint-section">
+            <h2># Breakpoints</h2>
+            <!-- ### Gets filled with JS -->
+            <div class="document-width"></div>
+            <div class=" breakpoint-info"></div>
+        </section>
+        <section id="color-palette-section" class="color-palette-section">
+            <h2># Color Palette</h2>
+            <div class="color-grid">
+                <div class="box primary-color">
+                    <p>Primary Color</p>
+                </div>
+                <div class="box primary-color-light">
+                    <p>Primary Color Light</p>
+                </div>
+                <div class="box primary-color-lighter">
+                    <p>Primary Color Lighter</p>
+                </div>
+                <div class="box secondary-color">
+                    <p>Secondary Color</p>
+                </div>
+                <div class="box secondary-color-light">
+                    <p>secondary Color Light</p>
+                </div>
+                <div class="box secondary-color-lighter">
+                    <p>Secondary Color Lighter</p>
+                </div>
+                <div class="box dark-color">
+                    <p>Dark Color</p>
+                </div>
+                <div class="box dark-color-light">
+                    <p>Dark Color Light</p>
+                </div>
+                <div class="box dark-color-lighter">
+                    <p>Dark Color Lighter</p>
+                </div>
+                <div class="box gray-color">
+                    <p>Gray Color</p>
+                </div>
+                <div class="box gray-color-light">
+                    <p>Gray Color Light</p>
+                </div>
+
+                <div class="box gray-color-lighter">
+                    <p>Gray Color Lighter</p>
+                </div>
+
+                <div class="box call-to-action-color">
+                    <p>Call to Action Color</p>
+                </div>
+                <div class="box call-to-action-color-light">
+                    <p>Call to Action Color Light</p>
+                </div>
+                <div class="box call-to-action-color-lighter">
+                    <p>Call to Action Color Lighter</p>
+                </div>
+                <div class="box success-color">
+                    <p>Success Color</p>
+                </div>
+                <div class="box success-color-light">
+                    <p>Success Color Light</p>
+                </div>
+                <div class="box success-color-lighter">
+                    <p>Success Color Lighter</p>
+                </div>
+                <div class="box error-color">
+                    <p>Error Color</p>
+                </div>
+                <div class="box error-color-light">
+                    <p>Error Color Light</p>
+                </div>
+                <div class="box error-color-lighter">
+                    <p>Error Color Lighter</p>
+                </div>
+                <div class="box warning-color">
+                    <p>Warning Color</p>
+                </div>
+                <div class="box warning-color-light">
+                    <p>Warning Color Light</p>
+                </div>
+                <div class="box warning-color-lighter">
+                    <p>Warning Color Lighter</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography-section" class="typography-section">
+            <h2># Typography</h2>
+            <div class="font-samples">
+                <div class="font-example helvetica-neue">
+                    <h3 class="helvetica-neue">Helvetica Neue</h3>
+                    <p>The quick brown fox jumps over the lazy dog. ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</p>
+                </div>
+
+                <div class="font-example helvetica-neue-condensed">
+                    <h3 class="helvetica-neue-condensed">Helvetica Neue Condensed</h3>
+                    <p>The quick brown fox jumps over the lazy dog. ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</p>
+                </div>
+
+                <div class="font-example helvetica-neue-extended">
+                    <h3 class="helvetica-neue-extended">Helvetica Neue Extended</h3>
+                    <p>The quick brown fox jumps over the lazy dog. ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</p>
+                </div>
+
+                <div class="font-example helvetica-neue-thin-condensed">
+                    <h3 class="helvetica-neue-thin-condensed">Helvetica Neue Thin Condensed</h3>
+                    <p>The quick brown fox jumps over the lazy dog. ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</p>
+                </div>
+
+                <div class="font-example helvetica-neue-medium-condensed">
+                    <h3 class="helvetica-neue-medium-condensed">Helvetica Neue Medium Condensed</h3>
+                    <p>The quick brown fox jumps over the lazy dog. ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</p>
+                </div>
+
+                <div class="font-example helvetica-neue-heavy-condensed">
+                    <h3 class="helvetica-neue-heavy-condensed">Helvetica Neue Heavy Condensed</h3>
+                    <p>The quick brown fox jumps over the lazy dog. ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</p>
+                </div>
+            </div>
+
+            <div class="heading-samples">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </div>
+
+            <div class="link-samples">
+                <a href="#">Link to foo</a>
+                <a href="#">Link to bar</a>
+                <a href="#">Link to foobar</a>
+            </div>
+        </section>
+        <section id="logotype-section" class="logotype-section">
+            <h2># Logotypes</h2>
+            <div class="logotype-samples">
+                <div class="logotype-sample">
+                    <img src="logotypes/5063_GU_logo_on_top_text_bottom_eng_centred_RGB.png" alt="">
+                </div>
+                <div class="logotype-sample" ">
+                    <img src=" logotypes/5061_GU_logo_on_top_text_bottom_eng_centred_b_and_w.png" alt="">
+                </div>
+                <div class="logotype-sample">
+                    <img src="logotypes/5062_GU_logo_on_top_text_bottom_two_rows_eng_centered_RGB.png" alt="">
+                </div>
+                <div class="logotype-sample">
+                    <img src="logotypes/5064_GU_logo_on_top_text_bottom_two_rows_eng_centered_b_and_w.png" alt="">
+                </div>
+                <div class="logotype-sample">
+                    <img src="logotypes/5110_GU_logo_flag_eng_RGB.png" alt="">
+                </div>
+                <div class="logotype-sample">
+                    <img src="logotypes/5118_GU_logo_flag_eng_b_and_w.png" alt="">
+                </div>
+                <div class="logotype-sample">
+                    <img src=" logotypes/5065_GU_logo_on_left_text_right_eng_RGB.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="buttons-section" class="buttons-section">
+            <h2># Buttons</h2>
+            <div class="button-samples">
+                <div class="button-sample">
+                    <button type="button" class="btn-primary">Button Primary</button>
+                </div>
+                <div class="button-sample">
+                    <button type="button" class="btn-secondary">Button Secondary</button>
+                </div>
+                <div class="button-sample">
+                    <button type="button" class="btn-light">Button Light</button>
+                </div>
+                <div class="button-sample">
+                    <button type="button" class="btn-lighter">Button Lighter</button>
+                </div>
+
+                <div class="button-sample">
+                    <button type="button" class="btn-primary" disabled>Any Button Disabled</button>
+                </div>
+                <div class="button-sample">
+                    <div class="button-sample">
+                        <button type="button" class="btn-link">Button Link</button>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer> <!-- footer spans full width -->
+        <div class="container">
+            <div class="footer-content-wrapper">
+                <div class="footer-logo"></div>
+                <div class="footer-info">
+                    <div>Address</div>
+                    <address>&copy; Göteborgs universitet <br>
+                        Box 100, 405 30 Göteborg</address>
+                    <telephone>+46 31 786 00 00</telephone>
+                </div>
+                <div class="footer-links">
+                    <div>Links</div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>

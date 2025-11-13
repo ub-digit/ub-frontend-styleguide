@@ -1,0 +1,113 @@
+.primary-color {
+  background-color: var(--primary-color);
+  color: var(--gray-color-lighter);
+}
+
+.primary-color-light {
+  background-color: var(--primary-color-light);
+  color: var(--gray-color-lighter);
+}
+
+.primary-color-lighter {
+  background-color: var(--primary-color-lighter);
+  color: var(--gray-color-lighter);
+}
+
+.secondary-color {
+  background-color: var(--secondary-color);
+  color: var(--gray-color-lighter);
+}
+
+.secondary-color-light {
+  background-color: var(--secondary-color-light);
+  color: var(--gray-color-lighter);
+}
+
+.secondary-color-lighter {
+  background-color: var(--secondary-color-lighter);
+  color: var(--gray-color-lighter);
+}
+
+.dark-color {
+  background-color: var(--dark-color);
+  color: var(--gray-color-lighter);
+}
+
+.dark-color-light {
+  background-color: var(--dark-color-light);
+  color: var(--gray-color-lighter);
+}
+
+.dark-color-lighter {
+  background-color: var(--dark-color-lighter);
+  color: var(--gray-color-lighter);
+}
+
+.gray-color {
+  background-color: var(--gray-color);
+  color: var(--dark-color-light);
+}
+
+.gray-color-light {
+  background-color: var(--gray-color-light);
+  color: var(--dark-color-light);
+}
+
+.gray-color-lighter {
+  background-color: var(--gray-color-lighter);
+  color: var(--dark-color-light);
+}
+
+.call-to-action-color {
+  background-color: var(--call-to-action-color);
+  color: var(--gray-color-lighter);
+}
+
+.call-to-action-color-light {
+  background-color: var(--call-to-action-color-light);
+  color: var(--gray-color-lighter);
+}
+.call-to-action-color-lighter {
+  background-color: var(--call-to-action-color-lighter);
+  color: var(--gray-color-lighter);
+}
+
+.success-color {
+  background-color: var(--success-color);
+  color: var(--gray-color-lighter);
+}
+
+.success-color-light {
+  background-color: var(--success-color-light);
+  color: var(--gray-color-lighter);
+}
+
+.success-color-lighter {
+  background-color: var(--success-color-lighter);
+  color: var(--gray-color-lighter);
+}
+.error-color {
+  background-color: var(--error-color);
+  color: var(--gray-color-lighter);
+}
+.error-color-light {
+  background-color: var(--error-color-light);
+  color: var(--gray-color-lighter);
+}
+.error-color-lighter {
+  background-color: var(--error-color-lighter);
+  color: var(--gray-color-lighter);
+}
+
+.warning-color {
+  background-color: var(--warning-color);
+  color: var(--dark-color);
+}
+.warning-color-light {
+  background-color: var(--warning-color-light);
+  color: var(--dark-color);
+}
+.warning-color-lighter {
+  background-color: var(--warning-color-lighter);
+  color: var(--dark-color);
+}

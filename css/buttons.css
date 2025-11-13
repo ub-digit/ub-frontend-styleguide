@@ -1,0 +1,76 @@
+.btn-primary,
+.btn-secondary,
+.btn-light,
+.btn-lighter {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--dark-color-lighter);
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-light:hover {
+  filter: brightness(1.1);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--gray-color-lighter);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--gray-color-lighter);
+}
+.btn-light {
+  background-color: var(--gray-color-light);
+  color: var(--dark-color);
+}
+.btn-lighter {
+  background-color: var(--gray-color-lighter);
+  color: var(--dark-color);
+}
+.btn-primary:active,
+.btn-secondary:active,
+.btn-light:active,
+.btn-lighter:active {
+  filter: brightness(0.9);
+}
+.btn-primary:disabled,
+.btn-secondary:disabled,
+.btn-light:disabled,
+.btn-lighter:disabled {
+  background-color: var(--gray-color-light);
+  color: var(--gray-color-lighter);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+/* ### LINKS ### */
+.btn-link {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+}
+.btn-link:hover {
+  color: var(--primary-color-lighter);
+}
+.btn-link:active {
+  color: var(--primary-color-dark);
+}
+.btn-link:disabled {
+  color: var(--gray-color-lighter);
+  cursor: not-allowed;
+  opacity: 0.6;
+}

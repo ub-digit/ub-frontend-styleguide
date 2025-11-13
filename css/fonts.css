@@ -1,0 +1,129 @@
+body {
+  color: var(--dark-color-light);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* Font utility classes */
+.helvetica-neue {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.helvetica-neue-condensed {
+  font-family: "Helvetica Neue Condensed", "Helvetica Neue", "Helvetica",
+    "Arial Narrow", sans-serif;
+}
+
+.helvetica-neue-extended {
+  font-family: "Helvetica Neue Extended", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+}
+
+.helvetica-neue-thin-condensed {
+  font-family: "Helvetica Neue Thin Condensed", "Helvetica Neue Condensed",
+    "Arial Narrow", sans-serif;
+}
+
+.helvetica-neue-medium-condensed {
+  font-family: "Helvetica Neue Medium Condensed", "Helvetica Neue Condensed",
+    "Arial Narrow", sans-serif;
+}
+
+.helvetica-neue-heavy-condensed {
+  font-family: "Helvetica Neue Heavy Condensed", "Helvetica Neue Condensed",
+    "Arial Narrow", sans-serif;
+}
+
+/* ### Headings #### */
+h1,
+.h1 {
+  font-family: "Helvetica Neue", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+h2,
+.h2 {
+  font-family: "Helvetica Neue", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+
+h3,
+.h3 {
+  font-family: "Helvetica Neue", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+h4,
+.h4 {
+  font-family: "Helvetica Neue", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+h5,
+.h5 {
+  font-family: "Helvetica Neue", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+h6,
+.h6 {
+  font-family: "Helvetica Neue", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+@container style(--inline-size-medium: var(--breakpoint-medium)) {
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+  }
+  h2,
+  .h2 {
+    font-size: 2rem;
+  }
+  h3,
+  .h3 {
+    font-size: 1.5rem;
+  }
+  h4,
+  .h4 {
+    font-size: 1.125rem;
+  }
+}
+@container style(--inline-size-large: var(--breakpoint-large)) {
+  h1,
+  .h1 {
+    font-size: 3rem;
+  }
+  h2,
+  .h2 {
+    font-size: 2.25rem;
+  }
+  h3,
+  .h3 {
+    font-size: 1.75rem;
+  }
+  h4,
+  .h4 {
+    font-size: 1.125rem;
+  }
+}
+
+/* ### LINKS ### */
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--primary-color);
+}
+a:active {
+  color: var(--primary-color-dark);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--primary-color-lighter);
+}
