@@ -73,7 +73,7 @@ h6,
   font-weight: 700;
 }
 
-@container style(--inline-size-medium: var(--breakpoint-medium)) {
+@media (min-width: 48rem) {
   h1,
   .h1 {
     font-size: 2.5rem;
@@ -91,7 +91,8 @@ h6,
     font-size: 1.125rem;
   }
 }
-@container style(--inline-size-large: var(--breakpoint-large)) {
+
+@media (min-width: 64rem) {
   h1,
   .h1 {
     font-size: 3rem;

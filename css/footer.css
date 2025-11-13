@@ -16,7 +16,7 @@ footer .footer-content-wrapper {
   gap: 1rem;
 }
 
-@container style(--inline-size-medium: var(--breakpoint-medium)) {
+@media (min-width: 48rem) {
   footer .footer-content-wrapper {
     flex-direction: row;
     justify-content: space-between;

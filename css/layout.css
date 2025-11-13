@@ -1,5 +1,3 @@
-@import url("vars.css");
-
 body {
   min-height: 100vh;
   position: relative;
@@ -75,7 +73,7 @@ body {
   gap: 2rem;
 }
 
-@container style(--inline-size-medium: var(--breakpoint-medium)) {
+@media (min-width: 48rem) {
   #logotype-section .logotype-samples {
     grid-template-columns: repeat(2, 1fr);
   }
