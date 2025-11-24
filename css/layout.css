@@ -1,4 +1,6 @@
 body {
+  display: grid;
+  gap: 1rem;
   min-height: 100vh;
   position: relative;
 }
@@ -18,9 +20,9 @@ body {
   text-decoration: none;
 }
 
-.container,
-.mobile-navigation-container {
+.container {
   padding: 0 1rem;
+  width: 100vw;
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;

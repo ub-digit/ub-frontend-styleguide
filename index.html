@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/main.js"></script>
-    <title>Document CSS</title>
+    <title>Gothenburg University Library - a web application frontend styleguide</title>
 </head>
 
 <body id="top">
@@ -24,7 +24,7 @@
                     </a>
                     <div class="header-site-description">
                         <div class="header-title"><a href="#">Gothenburg University Library</a></div>
-                        <p class="header-description">A simple template using only CSS for layout and styling.</p>
+                        <p class="header-description">a web application frontend styleguide</p>
                     </div>
                 </div>
                 <div class="header-right">
@@ -36,16 +36,11 @@
         </div>
     </header>
 
-    <div class="mobile-navigation-container">
-        <div id="mobile-navigation-toggle">
-            <div class="search-box">
-                <input name="search" type="search" placeholder="Search..." autofocus>
-            </div>
-            <button type="button">☰</button>
-        </div>
 
+    <div class="container">
         <nav id="main-navigation" class="main-navigation">
             <ul>
+                <li><a href="#top">Home</a></li>
                 <li><a href="#breakpoint-section">Breakpoints</a></li>
                 <li><a href="#color-palette-section">Color Palette</a></li>
                 <li><a href="#typography-section">Typography</a></li>
@@ -55,8 +50,18 @@
         </nav>
     </div>
 
-    <main class="container fix-viewport-height">
+    <div class="container">
+        <div id="search-bar">
+            <div class="search-box">
+                <input name="search" type="search" placeholder="Search..." autofocus>
+            </div>
+            <button type="button" aria-label="Search">
+                <img src="icon/search-icon.svg" alt="Search">
+            </button>
+        </div>
+    </div>
 
+    <main class="container fix-viewport-height">
         <section id="breakpoint-section" class="breakpoint-section">
             <h2># Breakpoints</h2>
             <!-- ### Gets filled with JS -->
@@ -244,6 +249,7 @@
                 </div>
         </section>
     </main>
+
     <footer> <!-- footer spans full width -->
         <div class="container">
             <div class="footer-content-wrapper">

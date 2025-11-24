@@ -1,7 +1,7 @@
 header {
   color: var(--light-color);
   height: var(--header-height);
-  /*  border-bottom: 1px solid var(--gray-color-light);*/
+  border-bottom: 1px solid var(--gray-color-light);
 }
 
 header .container {

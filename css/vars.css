@@ -8,19 +8,7 @@
   --hue-light: 0;
   --hue-dark: 0;
 
-  /* vars from gu-se website */
-  --hero-color: hsl(249 17% 20% / 1);
-  --hero-text: hsl(0 0% 100% / 1);
-  --action-color: hsl(338 100% 44% / 1);
-  --action-text: hsl(0 0% 100% / 1);
-  --blurb-default-color: hsl(210 100% 40% / 1);
-  --blurb-default-text: hsl(0 0% 100% / 1);
-  --blurb-1-color: hsl(100 74% 31% / 1);
-  --news-color: hsl(300, 7%, 3%);
-  --news-text: hsl(0 0% 100% / 1);
-
   /* ##### color variables ##### */
-
   --primary-color: oklch(56% 0.158 var(--hue-primary));
   --primary-color-light: oklch(66% 0.158 var(--hue-primary));
   --primary-color-lighter: oklch(76% 0.158 var(--hue-primary));
@@ -39,7 +27,6 @@
   --warning-color: oklch(84% 0.1642 var(--hue-warning));
   --warning-color-light: oklch(90% 0.1642 var(--hue-warning));
   --warning-color-lighter: oklch(95% 0.1642 var(--hue-warning));
-
   --dark-color: oklch(10% 0 var(--hue-dark));
   --dark-color-light: oklch(30% 0 var(--hue-dark));
   --dark-color-lighter: oklch(50% 0 var(--hue-dark));
@@ -48,7 +35,6 @@
   --gray-color-lighter: oklch(97% 0 var(--hue-light));
 
   /* ##### typography variables ##### */
-
   --header-height: 9rem;
   --footer-height: 10rem;
 
