@@ -3,6 +3,9 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
 }
+p {
+  margin-bottom: 1.5rem;
+}
 
 /* Font utility classes */
 .helvetica-neue {

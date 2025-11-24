@@ -4,53 +4,6 @@
   ); /*TODO: NEEDS FIX and research how to achieve this */
 }
 
-#search-bar {
-  display: flex;
-  height: 4rem;
-  cursor: pointer;
-  user-select: none;
-  border: 1px solid var(--gray-color-light);
-  overflow: hidden; /* make sure rounded corners work */
-  border-radius: 4px;
-
-  .search-box {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    input {
-      letter-spacing: 0.5rem;
-      position: relative;
-      background-color: transparent;
-      border: none;
-      height: 100%;
-      width: 100%;
-      padding: 1rem;
-      &:focus-visible {
-        outline: var(--primary-color-lighter) 1px solid;
-      }
-    }
-  }
-  button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background-color: var(--dark-color-light);
-    color: var(--gray-color-lighter);
-    font-size: 2rem;
-    padding: 0 1rem;
-    cursor: pointer;
-    img {
-      filter: invert(1);
-    }
-  }
-  button:hover {
-    color: var(--primary-color-lighter);
-  }
-}
-
 /* ### main navigation styles ### */
 #main-navigation ul {
   margin: 0;
@@ -61,26 +14,24 @@
   font-weight: bold;
   gap: 1rem;
   padding: 1rem;
+  white-space: nowrap;
 
   @media (min-width: 48rem) {
     flex-direction: row;
     border-bottom: none;
+    flex-wrap: wrap;
     align-items: center;
+  }
+  li a svg {
+    display: none;
   }
   li {
     @media (min-width: 48rem) {
-      &:first-child::before {
-        content: "";
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 1rem;
-        height: 1rem;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url("../icon/home-icon.svg");
-        display: inline-block;
-        margin-right: 0.5rem;
+      &:first-child {
+        svg {
+          display: inline-block;
+          margin-right: 0.5rem;
+        }
       }
     }
 

@@ -40,12 +40,18 @@
     <div class="container">
         <nav id="main-navigation" class="main-navigation">
             <ul>
-                <li><a href="#top">Home</a></li>
+                <li><a href="#top"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 16 16"><!-- Icon from OpenSearch UI by OpenSearch Contributors - https://github.com/opensearch-project/oui/blob/main/LICENSE.txt -->
+                                <path fill="#888888"
+                                    d="m8.13 1.229l5.5 4.47a1 1 0 0 1 .37.777V14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6.476a1 1 0 0 1 .37-.776l5.5-4.471a1 1 0 0 1 1.26 0M13 6.476L7.5 2.005L2 6.475V14h11z" />
+                            </svg></span>Home</a></li>
                 <li><a href="#breakpoint-section">Breakpoints</a></li>
                 <li><a href="#color-palette-section">Color Palette</a></li>
                 <li><a href="#typography-section">Typography</a></li>
                 <li><a href="#logotype-section">Logotypes</a></li>
                 <li><a href="#buttons-section">Buttons</a></li>
+                <li><a href="#icons-section">Icons</a></li>
+
             </ul>
         </nav>
     </div>
@@ -55,8 +61,12 @@
             <div class="search-box">
                 <input name="search" type="search" placeholder="Search..." autofocus>
             </div>
-            <button type="button" aria-label="Search">
-                <img src="icon/search-icon.svg" alt="Search">
+            <button class="btn-secondary" type="button" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 16 16"><!-- Icon from OpenSearch UI by OpenSearch Contributors - https://github.com/opensearch-project/oui/blob/main/LICENSE.txt -->
+                    <path fill="currentColor"
+                        d="m11.271 11.978l3.872 3.873a.5.5 0 0 0 .708 0a.5.5 0 0 0 0-.708l-3.565-3.564c2.38-2.747 2.267-6.923-.342-9.532c-2.73-2.73-7.17-2.73-9.898 0s-2.728 7.17 0 9.9a6.96 6.96 0 0 0 4.949 2.05a.5.5 0 0 0 0-1a5.96 5.96 0 0 1-4.242-1.757a6.01 6.01 0 0 1 0-8.486a6.004 6.004 0 0 1 8.484 0a6.01 6.01 0 0 1 0 8.486a.5.5 0 0 0 .034.738" />
+                </svg>
             </button>
         </div>
     </div>
@@ -199,6 +209,8 @@
         </section>
         <section id="logotype-section" class="logotype-section">
             <h2># Logotypes</h2>
+            <p>Logotypes from GU can be found here: <a href="https://bildbank.gu.se/folder/156641/"
+                    target="_blank">https://bildbank.gu.se/</a>. Below are the most commonly used logotypes.</p>
             <div class="logotype-samples">
                 <div class="logotype-sample">
                     <img src="logotypes/5063_GU_logo_on_top_text_bottom_eng_centred_RGB.png" alt="">
@@ -247,6 +259,16 @@
                         <button type="button" class="btn-link">Button Link</button>
                     </div>
                 </div>
+        </section>
+        <section id="icons-section" class="icons-section">
+            <h2># Icons</h2>
+            <p>Avoid vendor lock-in. Find and use open source SVG icons from <a href="https://icones.js.org/"
+                    target="_blank">https://icones.js.org/</a>.
+            </p>
+            <h4>Changing Icon Color</h4>
+            <p>To be able to change the color using CSS the propterty <strong>fill</strong> should be set to
+                "currentColor".</p>
+            <pre><code>fill="currentColor"</code></pre>
         </section>
     </main>
 

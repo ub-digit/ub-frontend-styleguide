@@ -19,11 +19,10 @@ body {
   color: var(--gray-color-lighter);
   text-decoration: none;
 }
-
 .container {
   padding: 0 1rem;
   width: 100vw;
-  max-width: 1200px;
+  max-width: 1200px; /* max width of content */
   margin: 0 auto;
   height: 100%;
 }
