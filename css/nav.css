@@ -37,7 +37,7 @@
 
     a {
       text-decoration: none;
-      color: var(--gray-color-dark);
+      color: var(--secondary-darker);
     }
     a:hover {
       text-decoration: underline;

@@ -1,84 +1,69 @@
 header {
-  color: var(--light-color);
   height: var(--header-height);
-  border-bottom: 1px solid var(--gray-color-light);
-}
-
-header .container {
-  height: 100%;
-}
-
-header .header-content-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-header .header-left {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  font-family: "Helvetica Neue Condensed", "Arial Narrow", sans-serif;
-}
-
-header .header-left .header-site-description .header-title {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-header .header-left .header-site-description .header-title a {
-  color: var(--dark-color);
-  text-decoration: none;
-}
-
-header .header-left .header-site-description .header-title a:hover {
-  color: var(--dark-color-lighter);
-  text-decoration: underline;
-}
-
-header .header-left .header-site-description .header-description {
-  font-size: 0.875rem;
-}
-
-@media (min-width: 48rem) {
-  header .header-left .header-site-description .header-title {
-    font-size: 1.5rem;
+  border-bottom: 1px solid var(--secondary-lighter);
+  .container {
+    height: 100%;
   }
-  header .header-left .header-site-description .header-description {
-    font-size: 1rem;
+  .header-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .header-left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", sans-serif;
+      .header-logo {
+        align-self: flex-start;
+        height: 5.375rem;
+        width: 5.25rem;
+        flex-shrink: 0;
+        background-image: url("../img/5110_GU_logo_flag_eng_RGB.png");
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        @media (min-width: 48rem) {
+          height: 6.875rem;
+          width: 6.75rem;
+        }
+      }
+
+      .header-site-description {
+        margin: 0;
+        color: var(--dark-color-light);
+        .header-title {
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          a {
+            color: var(--secondary-darker);
+            text-decoration: none;
+          }
+          a:hover {
+            color: var(--secondary);
+            text-decoration: underline;
+          }
+          @media (min-width: 48rem) {
+            font-size: 1.5rem;
+          }
+        }
+        .header-description {
+          font-size: 0.875rem;
+          @media (min-width: 48rem) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .header-right {
+      padding-top: 1rem;
+      .lang a {
+        color: var(--dark-color);
+        text-decoration: none;
+        padding: 2px 6px;
+        border-radius: 2px;
+      }
+    }
   }
-}
-
-header .header-left .header-site-description .header-description {
-  margin: 0;
-  color: var(--dark-color-light);
-}
-
-header .header-left .header-logo {
-  align-self: flex-start;
-  height: 5.375rem;
-  width: 5.25rem;
-  flex-shrink: 0;
-  background-image: url("../img/5110_GU_logo_flag_eng_RGB.png");
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@media (min-width: 48rem) {
-  header .header-left .header-logo {
-    height: 6.875rem;
-    width: 6.75rem;
-  }
-}
-
-header .header-right {
-  padding-top: 1rem;
-}
-header .header-right .lang a {
-  color: var(--dark-color);
-  text-decoration: none;
-  padding: 2px 6px;
-  border-radius: 2px;
 }

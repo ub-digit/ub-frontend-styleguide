@@ -1,24 +1,31 @@
 body {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   min-height: 100vh;
   position: relative;
+}
+
+section {
+  margin-bottom: 3rem;
 }
 
 #back-to-top-link {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  background-color: var(--dark-color-lighter);
-  color: var(--gray-color-lighter);
+  background-color: var(--secondary);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   z-index: 1000;
+  a {
+    color: var(--white);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
-#back-to-top-link a {
-  color: var(--gray-color-lighter);
-  text-decoration: none;
-}
+
 .container {
   padding: 0 1rem;
   width: 100vw;
@@ -45,13 +52,17 @@ body {
 }
 
 #color-palette-section .box {
-  border: 1px dotted var(--dark-color-lighter);
   padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-weight: bold;
+  p {
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+  }
 }
 
 /* #### Typography demonstration styles #### */
@@ -84,8 +95,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  background-color: var(--gray-color-lighter);
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-lighter);
 }
 
 #logotype-section .logotype-samples .logotype-sample img {

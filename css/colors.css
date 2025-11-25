@@ -1,113 +1,203 @@
-.primary-color {
-  background-color: var(--primary-color);
-  color: var(--gray-color-lighter);
+/* Utility classes for color variables */
+
+/* Primary colors */
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-primary-lighter {
+  background-color: var(--primary-lighter);
+}
+.bg-primary-light {
+  background-color: var(--primary-light);
+}
+.bg-primary-darker {
+  background-color: var(--primary-darker);
+}
+.bg-primary-muted {
+  background-color: var(--primary-muted);
 }
 
-.primary-color-light {
-  background-color: var(--primary-color-light);
-  color: var(--gray-color-lighter);
+.text-primary {
+  color: var(--primary);
 }
 
-.primary-color-lighter {
-  background-color: var(--primary-color-lighter);
-  color: var(--gray-color-lighter);
+.text-primary-lighter {
+  color: var(--primary-lighter);
+}
+.text-primary-light {
+  color: var(--primary-light);
+}
+.text-primary-darker {
+  color: var(--primary-darker);
+}
+.text-primary-muted {
+  color: var(--primary-muted);
 }
 
-.secondary-color {
-  background-color: var(--secondary-color);
-  color: var(--gray-color-lighter);
+/* Secondary colors */
+.bg-secondary {
+  background-color: var(--secondary);
+}
+.bg-secondary-lighter {
+  background-color: var(--secondary-lighter);
+}
+.bg-secondary-light {
+  background-color: var(--secondary-light);
+}
+.bg-secondary-darker {
+  background-color: var(--secondary-darker);
+}
+.bg-secondary-muted {
+  background-color: var(--secondary-muted);
 }
 
-.secondary-color-light {
-  background-color: var(--secondary-color-light);
-  color: var(--gray-color-lighter);
+.text-secondary {
+  color: var(--secondary);
+}
+.text-secondary-lighter {
+  color: var(--secondary-lighter);
+}
+.text-secondary-light {
+  color: var(--secondary-light);
+}
+.text-secondary-darker {
+  color: var(--secondary-darker);
+}
+.text-secondary-muted {
+  color: var(--secondary-muted);
 }
 
-.secondary-color-lighter {
-  background-color: var(--secondary-color-lighter);
-  color: var(--gray-color-lighter);
+/* Warning colors */
+.bg-warning {
+  background-color: var(--warning);
+}
+.bg-warning-lighter {
+  background-color: var(--warning-lighter);
+}
+.bg-warning-light {
+  background-color: var(--warning-light);
+}
+.bg-warning-darker {
+  background-color: var(--warning-darker);
+}
+.bg-warning-muted {
+  background-color: var(--warning-muted);
 }
 
-.dark-color {
-  background-color: var(--dark-color);
-  color: var(--gray-color-lighter);
+.text-warning {
+  color: var(--warning);
+}
+.text-warning-lighter {
+  color: var(--warning-lighter);
+}
+.text-warning-light {
+  color: var(--warning-light);
+}
+.text-warning-darker {
+  color: var(--warning-darker);
+}
+.text-warning-muted {
+  color: var(--warning-muted);
 }
 
-.dark-color-light {
-  background-color: var(--dark-color-light);
-  color: var(--gray-color-lighter);
+/* Success colors */
+.bg-success {
+  background-color: var(--success);
+}
+.bg-success-lighter {
+  background-color: var(--success-lighter);
+}
+.bg-success-light {
+  background-color: var(--success-light);
+}
+.bg-success-darker {
+  background-color: var(--success-darker);
+}
+.bg-success-muted {
+  background-color: var(--success-muted);
 }
 
-.dark-color-lighter {
-  background-color: var(--dark-color-lighter);
-  color: var(--gray-color-lighter);
+.text-success {
+  color: var(--success);
+}
+.text-success-lighter {
+  color: var(--success-lighter);
+}
+.text-success-light {
+  color: var(--success-light);
 }
 
-.gray-color {
-  background-color: var(--gray-color);
-  color: var(--dark-color-light);
+.text-success-darker {
+  color: var(--success-darker);
+}
+.text-success-muted {
+  color: var(--success-muted);
 }
 
-.gray-color-light {
-  background-color: var(--gray-color-light);
-  color: var(--dark-color-light);
+/* Error colors */
+.bg-error {
+  background-color: var(--error);
+}
+.bg-error-lighter {
+  background-color: var(--error-lighter);
+}
+.bg-error-light {
+  background-color: var(--error-light);
+}
+.bg-error-darker {
+  background-color: var(--error-darker);
+}
+.bg-error-muted {
+  background-color: var(--error-muted);
 }
 
-.gray-color-lighter {
-  background-color: var(--gray-color-lighter);
-  color: var(--dark-color-light);
+.text-error {
+  color: var(--error);
+}
+.text-error-lighter {
+  color: var(--error-lighter);
+}
+.text-error-light {
+  color: var(--error-light);
 }
 
-.call-to-action-color {
-  background-color: var(--call-to-action-color);
-  color: var(--gray-color-lighter);
+.text-error-darker {
+  color: var(--error-darker);
+}
+.text-error-muted {
+  color: var(--error-muted);
 }
 
-.call-to-action-color-light {
-  background-color: var(--call-to-action-color-light);
-  color: var(--gray-color-lighter);
+/* CTA colors */
+.bg-cta {
+  background-color: var(--call-to-action);
 }
-.call-to-action-color-lighter {
-  background-color: var(--call-to-action-color-lighter);
-  color: var(--gray-color-lighter);
+.bg-cta-lighter {
+  background-color: var(--cta-lighter);
 }
-
-.success-color {
-  background-color: var(--success-color);
-  color: var(--gray-color-lighter);
+.bg-cta-light {
+  background-color: var(--cta-light);
 }
-
-.success-color-light {
-  background-color: var(--success-color-light);
-  color: var(--gray-color-lighter);
+.bg-cta-darker {
+  background-color: var(--cta-darker);
+}
+.bg-cta-muted {
+  background-color: var(--cta-muted);
 }
 
-.success-color-lighter {
-  background-color: var(--success-color-lighter);
-  color: var(--gray-color-lighter);
-}
-.error-color {
-  background-color: var(--error-color);
-  color: var(--gray-color-lighter);
-}
-.error-color-light {
-  background-color: var(--error-color-light);
-  color: var(--gray-color-lighter);
-}
-.error-color-lighter {
-  background-color: var(--error-color-lighter);
-  color: var(--gray-color-lighter);
+.text-cta {
+  color: var(--call-to-action);
 }
 
-.warning-color {
-  background-color: var(--warning-color);
-  color: var(--dark-color);
+.text-cta-lighter {
+  color: var(--cta-lighter);
 }
-.warning-color-light {
-  background-color: var(--warning-color-light);
-  color: var(--dark-color);
+.text-cta-light {
+  color: var(--cta-light);
 }
-.warning-color-lighter {
-  background-color: var(--warning-color-lighter);
-  color: var(--dark-color);
+.text-cta-darker {
+  color: var(--cta-darker);
+}
+.text-cta-muted {
+  color: var(--cta-muted);
 }

@@ -1,64 +1,63 @@
 footer {
   /* todo: fix height and container height */
-  background-color: var(--dark-color-light);
-  color: var(--gray-color-lighter);
+  background-color: var(--secondary);
+  color: var(--white);
   height: auto; /*var(--footer-height);*/
   margin-top: 2em;
   font-size: 0.8rem;
   padding: 2rem 0;
-}
-footer .footer-content-wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-}
-
-@media (min-width: 48rem) {
-  footer .footer-content-wrapper {
-    flex-direction: row;
-    justify-content: space-between;
+  .footer-content-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    @media (min-width: 48rem) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .footer-logo {
+      width: 7.375rem;
+      height: 5.875rem;
+      background-image: url("../img/5068_LO_GU_cen2rNEG.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .footer-info,
+    footer-links {
+      > div {
+        font-weight: bold;
+        font-size: 1rem;
+      }
+    }
+    .footer-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      a {
+        color: var(--white);
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+        &:visited {
+          color: var(--white);
+        }
+        &:active {
+          color: var(--primary-light);
+        }
+      }
+    }
   }
 }
 
-footer .footer-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-footer .footer-logo {
-  width: 7.375rem;
-  height: 5.875rem;
-  background-image: url("../img/5068_LO_GU_cen2rNEG.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-footer .footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-footer .footer-links a {
-  color: var(--gray-color-lighter);
-  text-decoration: none;
-}
-footer .footer-links a:hover {
-  text-decoration: underline;
-}
-
-footer .footer-links a:visited {
-  color: var(--gray-color-lighter);
-}
-
-footer .footer-links a:active {
-  color: var(--primary-color-light);
-}
 footer .footer-links > div,
 footer .footer-info > div {
   font-weight: bold;

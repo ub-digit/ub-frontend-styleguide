@@ -3,9 +3,6 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
 }
-p {
-  margin-bottom: 1.5rem;
-}
 
 /* Font utility classes */
 .helvetica-neue {
@@ -124,7 +121,7 @@ a:visited {
   color: var(--primary-color);
 }
 a:active {
-  color: var(--primary-color-dark);
+  color: var(--primary-color-darker);
 }
 
 a:hover {

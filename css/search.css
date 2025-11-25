@@ -3,7 +3,7 @@
   height: 4rem;
   cursor: pointer;
   user-select: none;
-  border: 1px solid var(--gray-color-light);
+  border: 1px solid var(--secondary-lighter);
   overflow: hidden; /* make sure rounded corners work */
   border-radius: 4px;
 
@@ -14,21 +14,17 @@
     width: 100%;
     padding: 0;
     input {
-      position: relative;
       background-color: transparent;
       border: none;
       height: 100%;
       width: 100%;
       padding: 1rem;
       &:focus-visible {
-        outline: var(--primary-color-lighter) 1px solid;
+        outline: var(--primary-lighter) 1px solid;
       }
     }
-  }
-  button {
-    border-color: var(--secondary-color);
-  }
-  button:hover {
-    color: var(--primary-color-lighter);
+    button:hover {
+      color: var(--primary);
+    }
   }
 }
