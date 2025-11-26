@@ -9,23 +9,22 @@ section {
   margin-bottom: 3rem;
 }
 
-.skip-link {
+a.skip-link {
   position: absolute;
   top: 0;
   left: 0;
   transform: translateY(-100%);
   padding: 0.75rem 1rem;
-  background: #fff;
-  color: #000;
+  background: var(--primary);
+  color: var(--white) !important;
   z-index: 1000;
-  border: 2px solid currentColor;
-  border-radius: 0.25rem;
   text-decoration: none;
 
   /* Accessibility improvements */
   font-weight: 600;
   line-height: 1;
-  &:focus {
+  &:focus-visible {
+    outline: none;
     transform: translateY(0);
   }
 }
@@ -34,7 +33,7 @@ section {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  background-color: var(--warning-muted);
+  background-color: var(--primary-lighter);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   z-index: 1000;
