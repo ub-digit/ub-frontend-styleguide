@@ -53,6 +53,14 @@ footer {
         &:active {
           color: var(--primary-light);
         }
+        &:focus {
+          outline: 2px solid var(--white);
+          outline-offset: 2px;
+        }
+        &:focus-visible {
+          outline: 2px solid var(--white);
+          outline-offset: 2px;
+        }
       }
     }
   }

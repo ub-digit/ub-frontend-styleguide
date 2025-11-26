@@ -128,3 +128,12 @@ a:hover {
   text-decoration: underline;
   color: var(--primary-light);
 }
+
+a:focus {
+  outline: 2px solid var(--secondary-darker);
+  outline-offset: 2px;
+}
+a:focus-visible {
+  outline: 2px solid var(--secondary-darker);
+  outline-offset: 2px;
+}

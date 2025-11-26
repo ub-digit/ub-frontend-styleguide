@@ -3,9 +3,26 @@
   height: 4rem;
   cursor: pointer;
   user-select: none;
-  border: 1px solid var(--secondary-lighter);
+  border: 1px solid var(--secondary);
   overflow: hidden; /* make sure rounded corners work */
   border-radius: 4px;
+  box-shadow: 0 2px 4px oklch(from var(--secondary-darker) l c h / 0.1);
+
+  button {
+    border-radius: 0;
+    &:hover {
+      color: var(--primary-lighter);
+    }
+    &:active {
+      background-color: var(--primary);
+    }
+
+    &:focus-visible {
+      outline: none;
+      outline-offset: 0;
+      color: var(--primary-light);
+    }
+  }
 
   .search-box {
     overflow: hidden;
@@ -20,11 +37,8 @@
       width: 100%;
       padding: 1rem;
       &:focus-visible {
-        outline: var(--primary-lighter) 1px solid;
+        outline: var(--secondary) 1px solid;
       }
-    }
-    button:hover {
-      color: var(--primary);
     }
   }
 }
