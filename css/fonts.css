@@ -1,5 +1,5 @@
 body {
-  color: var(--dark-color-light);
+  color: var(--secondary-darker);
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
 }
@@ -114,17 +114,17 @@ h6,
 /* ### LINKS ### */
 
 a {
-  color: var(--primary-color);
+  color: var(--primary);
   text-decoration: none;
 }
 a:visited {
-  color: var(--primary-color);
+  color: var(--primary);
 }
 a:active {
-  color: var(--primary-color-darker);
+  color: var(--primary-darker);
 }
 
 a:hover {
   text-decoration: underline;
-  color: var(--primary-color-lighter);
+  color: var(--primary-light);
 }
