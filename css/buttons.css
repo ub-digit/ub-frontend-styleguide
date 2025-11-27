@@ -75,4 +75,8 @@
     cursor: not-allowed;
     opacity: 0.6;
   }
+  &:focus-visible {
+    outline: 2px solid var(--secondary-darker);
+    outline-offset: 2px;
+  }
 }

@@ -117,7 +117,7 @@ a.skip-link {
   align-items: center;
   padding: 3rem;
   border-radius: 0.5rem;
-  background-color: var(--secondary-lighter);
+  border: 1px solid var(--secondary-lighter);
 }
 
 #logotype-section .logotype-samples .logotype-sample img {
