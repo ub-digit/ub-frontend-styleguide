@@ -86,17 +86,33 @@ a.skip-link {
 }
 
 /* #### Typography demonstration styles #### */
-#typography-section .font-samples {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
 
-#typography-section .link-samples {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 0.5rem;
+#typography-section {
+  .font-samples {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    .font-family-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .font-sample {
+        border: 1px solid var(--secondary-lighter);
+        padding: 1rem;
+        border-radius: 4px;
+      }
+    }
+  }
+  .link-samples {
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
 }
 
 #logotype-section .logotype-samples {

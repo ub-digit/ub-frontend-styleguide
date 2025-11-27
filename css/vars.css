@@ -97,6 +97,10 @@
   }
 
   /* ##### typography variables ##### */
+  --body-font-family: "Arial", sans-serif;
+  --header-font-family: "tex_gyre_heros_cnbold", "Arial Narrow", Arial,
+    sans-serif;
+
   --header-height: 9rem;
   --footer-height: 10rem;
 

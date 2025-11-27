@@ -1,10 +1,42 @@
 body {
-  color: var(--secondary-darker);
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--secondary);
+  font-family: var(--body-font-family);
   font-weight: 400;
 }
 
 /* Font utility classes */
+.tex-gyre-heros-bold {
+  font-family: "tex_gyre_herosbold", "Arial Narrow", sans-serif;
+}
+
+.tex-gyre-heros-cn-regular {
+  font-family: "tex_gyre_heros_cnregular", "Arial Narrow", sans-serif;
+}
+
+.tex-gyre-heros-cn-bold {
+  font-family: "tex_gyre_heros_cnbold", "Arial Narrow", sans-serif;
+}
+
+.tex-gyre-heros-cn-italic {
+  font-family: "tex_gyre_heros_cnitalic", "Arial Narrow", sans-serif;
+}
+
+.tex-gyre-heros-cn-bold-italic {
+  font-family: "tex_gyre_heros_cnbold_italic", "Arial Narrow", sans-serif;
+}
+
+.tex-gyre-heros-regular {
+  font-family: "tex_gyre_herosregular", "Arial Narrow", sans-serif;
+}
+
+.tex-gyre-heros-italic {
+  font-family: "tex_gyre_herositalic", "Arial Narrow", sans-serif;
+}
+
+.tex-gyre-heros-bold-italic {
+  font-family: "tex_gyre_herosbold_italic", "Arial Narrow", sans-serif;
+}
+
 .helvetica-neue {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
@@ -116,6 +148,13 @@ h6,
 a {
   color: var(--primary);
   text-decoration: none;
+  &.arrow-after::after {
+    content: "→";
+    margin-left: 0.25rem;
+    display: inline-block; /* fixes underline bleed */
+    text-decoration: none; /* removes underline */
+    color: var(--secondary);
+  }
 }
 a:visited {
   color: var(--primary);

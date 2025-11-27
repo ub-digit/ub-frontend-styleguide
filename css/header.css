@@ -1,4 +1,4 @@
-header {
+body > header {
   height: var(--header-height);
   border-bottom: 1px solid var(--secondary-lighter);
   .container {
@@ -13,7 +13,7 @@ header {
       flex-direction: row;
       align-items: center;
       gap: 1rem;
-      font-family: "Helvetica Neue Condensed", "Arial Narrow", sans-serif;
+
       .header-logo {
         align-self: flex-start;
         height: 5.375rem;
@@ -33,6 +33,7 @@ header {
         margin: 0;
         color: var(--dark-color-light);
         .header-title {
+          font-family: var(--header-font-family);
           font-size: 1rem;
           text-transform: uppercase;
           font-weight: 700;
